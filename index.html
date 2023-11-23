@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Language Detection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url("");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+        }
+
+        #header {
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        #content {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        #instructions {
+            flex: 1;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        #camera-icon {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            width: 100px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #camera-icon img {
+            width: 60px;
+            height: 60px;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1>Sign Language Detection Model</h1>
+    </div>
+    <div id="content">
+        <div id="instructions">
+            <h2>Instructions for Deaf People</h2>
+            <p>
+                To use sign language detection model the user should clicks on the camera icon it will capture a frame from the webcam.
+                This frame will be used as input to the sign language detection model. Run the sign language detection model on the input frame. 
+                This will produce a prediction of the alphabet that is being signed in the frame. 
+                Prediction will be displayed to the user.
+            </p>
+        </div>
+        <div id="camera-icon">
+            <img src="CAMERAICON.jpg" alt="Camera Icon">
+        </div>
+    </div>
+    <a href="./Pbl_coming_soon.html">Coming Soon!!!</a>
+</body>
+</html>

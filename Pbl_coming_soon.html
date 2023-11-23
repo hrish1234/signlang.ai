@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap">
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden;
+            background: linear-gradient(45deg, #4a69bb, #667eea, #764ba2, #6b8cce);
+            background-size: 400% 400%;
+            animation: gradientAnimation 15s ease infinite;
+            transition: background 1s;
+            font-family: 'Oswald', sans-serif;
+            text-align: center;
+            color: #fff;
+            position: relative;
+        }
+
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        h1 {
+            font-size: 3em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+
+        .construction {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .laptop {
+            width: 300px;
+            height: 200px;
+            background: #fff;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 10px;
+            overflow: hidden;
+            border: 5px solid #333;
+        }
+
+        .laptop .screen {
+            width: 100%;
+            height: 80%;
+            background: #000;
+            position: absolute;
+            top: 10%;
+            overflow: hidden;
+            padding: 20px;
+            box-sizing: border-box;
+            color: #00ff00;
+            font-family: monospace;
+            white-space: pre-wrap;
+        }
+
+        .code-animation {
+            white-space: pre-wrap;
+            overflow: hidden;
+            width: 100%;
+            margin: 0;
+            color: #00ff00;
+            font-family: monospace;
+            animation: typeWriter 5s steps(40) 1s infinite;
+        }
+
+        @keyframes typeWriter {
+            0% {
+                width: 0;
+            }
+            100% {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Coming Soon</h1>
+    <div class="construction">
+        <div class="laptop">
+            <div class="screen">
+                <p class="code-animation">
+                    &lt;!DOCTYPE html&gt;<br>
+                    &lt;html lang="en"&gt;<br>
+                    &lt;head&gt;<br>
+                    &lt;meta charset="UTF-8"&gt;<br>
+                    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;<br>
+                    &lt;title&gt;Coming Soon&lt;/title&gt;<br>
+                    &lt;/head&gt;<br>
+                    &lt;body&gt;<br>
+                    &lt;h1&gt;Coming Soon&lt;/h1&gt;<br>
+                    &lt;/body&gt;<br>
+                    &lt;/html&gt;<br>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
